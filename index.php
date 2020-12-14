@@ -11,12 +11,12 @@
     
     
     $configuration = new Configuration();
-    $configuration::$debugging = true;
-    $configuration::$db_name = 'test';
-    $configuration::$host = 'localhost';
-    $configuration::$password = 'root';
-    $configuration::$username = 'root';
-    $configuration::$port = '8080';
+    $configuration::$debugging = $_ENV["DEBUG"];
+    $configuration::$db_name = $_ENV["DBNAME"];
+    $configuration::$host = $_ENV["HOST"];
+    $configuration::$password = $_ENV["PASSWORD"];
+    $configuration::$username = $_ENV["USERNAME"];
+    $configuration::$port = $_ENV["PORT"];
 
     $db = new Database($configuration);
     $model = new IndexModel($db);
