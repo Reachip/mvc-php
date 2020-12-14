@@ -9,7 +9,6 @@
     require_once('router.php');
     require_once('url.php');
     
-    
     $configuration = new Configuration();
     $configuration::$debugging = $_ENV["DEBUG"];
     $configuration::$db_name = $_ENV["DBNAME"];
@@ -20,8 +19,10 @@
 
     $db = new Database($configuration);
     $model = new IndexModel($db);
+
     $template = new Template("templates/");
-    $view = new IndexView($model, $template);
+    $view = new IndexView($template);
+
     $controller = new IndexController($model, $view);
     
     $router = new Router();

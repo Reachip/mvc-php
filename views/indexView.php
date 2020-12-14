@@ -4,12 +4,10 @@ require_once('template.php');
 
 class IndexView extends View
 {
-    protected Model $model;
     protected Template $template;
 
-    public function __construct(Model $model, Template $template)
+    public function __construct(Template $template)
     {
-        $this->model = $model;
         $this->template = $template;
     }
 
