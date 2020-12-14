@@ -28,4 +28,3 @@
     $router = new Router();
     $router->add_route(HTTPMethod::GET, "/", $controller);
     $router->serv(LocalURI::get_uri());
-?>

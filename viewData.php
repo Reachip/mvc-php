@@ -1,6 +1,7 @@
 <?php
 
-class viewData {
+class viewData
+{
     protected array $data;
 
     public function __construct()
@@ -8,14 +9,13 @@ class viewData {
         $this->data = array();
     }
 
-    public function set_data($key, $value) {
+    public function set_data($key, $value)
+    {
         $this->data[$key] = $value;
     }
 
-    public function get_data() {
+    public function get_data()
+    {
         return $this->data;
     }
 }
-
-
-?>
