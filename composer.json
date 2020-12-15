@@ -1,8 +1,12 @@
 {
     "name": "rached/mvc-php",
-    "require": {
+    "description": "Simple and custom MVC lib",
+    "type": "library",
+    "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.17"
     },
+
+    "license": "MIT",
     "authors": [{
         "name": "Mejri Rached",
         "email": "r.mejri74100@gmail.com"
